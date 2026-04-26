@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(160.98deg, #1A1A1A 14.77%, #1D1056 117.86%);
+    color: #ddd;
+    transition: 0.3s, color 0.3s;
+}
+
+
+.iziToast.custom-toast {
+    border-radius: 18px;
+    background: rgba(16, 16, 34, 0.96);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.header__link {
+    position: absolute;
+    transform: translate(10px, -70px);
+
+    background-color: #303030;
+    padding: 7px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.header__link:hover {
+    opacity: 1;
+}
+
+.iziToast.custom-toast .iziToast-title {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.iziToast.custom-toast .iziToast-message {
+    color: #e5e5e5;
+}
+
+
+.forgot {
+    font-size: 10px;
+    color: #8a2bff;
+    text-align: left;
+}
+
+.site-header {
+    padding: 36px 0 8px;
+    text-align: center;
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #a58cff;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+    color: #8a2bff;
+}
+
+body.light-mode .theme-toggle {
+    color: #6c5ce7;
+}
+
+body.light-mode .theme-toggle:hover {
+    color: #5f3dc4;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #a58cff;
+    font-weight: 600;
+}
+
+.logo-dots {
+    color: #8a2bff;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.page {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.signin-card {
+    width: 520px;
+    max-width: 92vw;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+body.light-mode .title {
+    color: #1A1A1A;
+}
+
+.textcha {
+    color: #bdb6c6;
+    margin-bottom: 36px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+body.light-mode .textcha {
+    color: #666;
+}
+
+.signin-form {
+    display: grid;
+    gap: 16px;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #eee;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+body.light-mode .input input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+body.light-mode .input input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.error1,
+.error2,
+.error3,
+.error {
+    text-align: left;
+    font-size: 10px;
+}
+
+
+.input input:hover {
+    border: 1px solid rgba(255, 255, 255, 0.256);
+}
+
+body.light-mode .input input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.input input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.password-input {
+    display: flex;
+    align-items: center;
+}
+
+.password-input input {
+    border-radius: 30px;
+    padding-right: 48px;
+}
+
+.icon {
+    position: absolute;
+    left: 490px;
+    color: rgba(96, 65, 181, 0.829);
+}
+
+.icon2 {
+    position: absolute;
+    left: 490px;
+    color: rgba(96, 65, 181, 0.829);
+}
+
+.otish {
+    margin-top: 18px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 28px;
+    border: none;
+    background: linear-gradient(90deg, #8a2bff, #a54bff);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(138, 43, 255, 0.18);
+}
+
+.btn:hover {
+
+    transform: translate(0px, -2px);
+    box-shadow: 0 6px 18px rgba(138, 43, 255, 0.327);
+
+}

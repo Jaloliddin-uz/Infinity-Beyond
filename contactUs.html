@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./contactUs.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- IDk link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="src/Group 1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <div data-aos="fade-right" data-aos-duration="1000" class="header__items"><img class="header__logo"
+                src="src/LOGO.png" alt="">
+            <nav class="header__nav">
+                <a href="accaunt.html" class="header__link"><i class="fa-solid fa-angle-left"></i>Ortga</a>
+            </nav>
+        </div>
+
+
+
+        <div class="header__profile" data-aos="fade-left" data-aos-duration="1000">
+
+            <p class="header__welcome">Welcome, <span class="username">Mike Johnson</span></p>
+
+            <div class="profile-img">
+                <img src="src/default.png" class="header__avatar" alt="Profile">
+
+            </div>
+            <div class="header__gear">
+                <button class="cardbtn" popovertarget="model">
+                    <p class="gear"><i class="fa-solid fa-gear"></i></p>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="box" popover="" id="model">
+
+        <section class="signin-card">
+
+            <div class="sign-top">
+                <p class="title">Akkaunt ma'lumotlari</p>
+                <button popovertarget="model" id="model" class="btn2" popovertargetaction="hide">
+                    x</button>
+            </div>
+
+            <p class="info">Saqlangan user profile.</p>
+            <hr class="hr1">
+            <div class="acc-info">
+                <p class="textcha name">Name: </p>
+                <hr class="h4">
+                <p class="textcha gmail">Email: </p>
+                <hr>
+                <p class="textcha passw">Password: </p>
+            </div>
+
+            <hr class="hr2">
+
+            <h2 class="imga">Profile image:</h2>
+
+            <div class="image">
+
+                <img src="src/default.png">
+                <label for="file-path">
+                    <span class="material-symbols-rounded">photo_camera</span>
+                </label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="file-path" class="user-file">
+            </div>
+
+            <hr class="hr2">
+            <a href="./index.html" class="btn3">Delete</a>
+            <a href="./index.html" class="btn4">Log out</a>
+        </section>
+    </div>
+
+
+
+
+
+
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1500">
+
+        <div class="contact-text" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Bizga <span>Bog'lanish</span></h2>
+            <h4>keling, birga ishlaylik</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, fugiat.
+                Vitae cum magni accusantium veritatis dolore a perferendis minus eius dolorem. Labore autem rem placeat
+                beatae earum mollitia saepe quis?</p>
+            <div class="contact-list">
+                <li><i class="fa-solid fa-paper-plane"></i> ContactUs@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> +998 99 999 99 99</li>
+            </div>
+            <div class="contact-icons">
+                <a href="" style="--i:7"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" style="--i:8"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank" style="--i:9"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/+jLgJD926_q0zYjA6" target="_blank" style="--i:10"><i
+                        class="fa-brands fa-telegram"></i></a>
+            </div>
+
+        </div>
+
+        <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+            <form class="form">
+                <input type="" class="name" placeholder="Enter your Name" required>
+                <input type="email" class="email" placeholder="Enter your Email" required>
+
+                <textarea class="textarea" name="" id="" cols="40" rows="10" placeholder="Enter your Message"
+                    required></textarea>
+                <button type="submit" value="submit" class="send">
+                    Send <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./contactUs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

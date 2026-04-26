@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Award 2</title>
+    <link rel="shortcut icon" href="src/Group 1.png" type="image/x-icon">
+
+    <!-- (fontawesome link) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- (end fontawesome link) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="award-detail.css" />
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__items"><img class="header__logo" src="src/LOGO.png" alt="">
+            <nav class="header__nav">
+                <a href="accaunt.html" class="header__link"><i class="fa-solid fa-angle-left"></i>Ortga</a>
+
+            </nav>
+        </div>
+
+
+
+        <div class="header__profile">
+            <p class="header__welcome">Welcome, <span class="username">Mike Johnson</span></p>
+
+            <div class="profile-img">
+                <img src="src/default.png" class="header__avatar" alt="Profile">
+            </div>
+            <div class="header__gear">
+                <button class="cardbtn" popovertarget="model">
+                    <p class="gear"><i class="fa-solid fa-gear"></i></p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="box" popover="" id="model">
+        <section class="signin-card">
+            <div class="sign-top">
+                <p class="title">Akkaunt ma'lumotlari</p>
+                <button popovertarget="model" id="model" class="btn2" popovertargetaction="hide">x</button>
+            </div>
+
+            <p class="info">Saqlangan user profile.</p>
+            <hr class="hr1">
+            <div class="acc-info">
+                <p class="textcha name">Name: </p>
+                <hr class="h4">
+                <p class="textcha gmail">Email: </p>
+                <hr>
+                <p class="textcha passw">Password: </p>
+            </div>
+
+            <hr class="hr2">
+
+            <h2 class="imga">Profile image:</h2>
+
+            <div class="image">
+                <img src="src/default.png">
+                <label for="file-path">
+                    <span class="material-symbols-rounded">photo_camera</span>
+                </label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="file-path" class="user-file">
+            </div>
+
+            <hr class="hr2">
+            <a href="./index.html" class="btn3">Delete</a>
+            <a href="./index.html" class="btn4">Log out</a>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="award2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

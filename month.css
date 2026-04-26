@@ -1,0 +1,1255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1380px;
+    padding: 0 20px;
+
+}
+
+a {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(90deg, #0b0b10 0%, #14074f 70%);
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+
+
+.header {
+    padding: 20px 0;
+
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.brand__logo {
+    display: flex;
+    gap: 8px;
+}
+
+.brand__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.brand__dot.dot-1 {
+    background-color: #9945ff;
+}
+
+.brand__dot.dot-2 {
+    background-color: #ff564c;
+}
+
+.brand__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header__actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn.login {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.btn.login:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn.signup {
+    color: #000;
+    background: #9945ff;
+}
+
+.btn.signup:hover {
+    background: #7a35cc;
+}
+
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero__txt {
+    font-size: 18px;
+    color: #b8b8b8;
+    line-height: 1.6;
+}
+
+
+
+.devices-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+
+footer {
+    margin-top: 100px;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(4, 7, 44) 65%, rgb(4, 7, 44) 100%);
+}
+
+.devices-image {
+    margin: 0px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.devices-image img {
+    width: 1000px;
+    margin-right: 100px;
+    height: auto;
+}
+
+.devices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 50px;
+    text-align: left;
+}
+
+.device-category h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.device-category ul {
+    list-style: none;
+}
+
+.device-category li {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: #b8b8b8;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.device-category li:hover {
+    color: #9945ff;
+}
+
+
+.it__img {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid transparent;
+
+}
+
+.it__img:hover {
+    border: 3px solid #7a29e4;
+
+}
+
+.it__img img:hover {
+    transform: scale(1.3);
+}
+
+
+.series {
+    padding: 100px 0 80px;
+}
+
+.series__title {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 14px;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.series__subtitle {
+    color: #c8c8d1;
+    font-size: 18px;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(220px, 1fr));
+    gap: 28px;
+}
+
+
+.series-card {
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(13, 16, 34, 0.75);
+    border: 1px solid rgba(80, 80, 80, 0.4);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 54px rgba(0, 0, 0, 0.7);
+    border-color: rgba(151, 151, 151, 0.8);
+}
+
+
+.footer__list:hover,
+.footer__list2:hover,
+.footer__list3:hover {
+    color: #6200EA;
+}
+
+.foot__log {}
+
+.series-image-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    background-color: #090b1f;
+}
+
+.series-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(0.87) saturate(1.05);
+}
+
+.series-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    z-index: 2;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.series-card h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 16px 14px 8px;
+}
+
+
+.series-season {
+    color: #a5a6b9;
+    font-size: 14px;
+    margin: 0 14px 20px;
+}
+
+.monthly {
+
+    padding-top: 150px;
+}
+
+a {
+    color: #8C8C8C;
+    text-decoration: none;
+    text-align: left;
+}
+
+.month-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month-title {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.month-txt {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.month-rec {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 50px;
+    font-size: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.month-btns {
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    width: max-content;
+    border-radius: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: #1A1A1A;
+}
+
+.month-btn1 {
+    font-family: "Raleway", sans-serif;
+    color: #F5F5F5;
+    background-color: #1A1A1A;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: transparent;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+.month-btn3 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    font-family: "Raleway", sans-serif;
+    color: #F5F5F5;
+    background-color: #1A1A1A;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: transparent;
+    transition: 0.3s;
+}
+
+.month-btn2 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    font-family: "Raleway", sans-serif;
+    color: #F5F5F5;
+    background-color: #6200EA;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: transparent;
+    transition: 0.3s;
+}
+
+
+.month-btn1:hover {
+    background-color: #484848;
+    transform: translate(0px, -3px);
+}
+
+.month-btn3:hover {
+    background-color: #484848;
+    transform: translate(0px, -3px);
+}
+
+.month-btn2:hover {
+    background-color: #33007b;
+    transform: translate(0px, -5px);
+}
+
+.month_card-title {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.month_card-txtlar {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0%;
+
+    margin-top: 6px;
+}
+
+.month_card-bottom {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sing-up_btn1 {
+    margin-left: 50px;
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    padding: 10px 40px;
+    background-color: #595959;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+.sing-up_btn2 {
+    margin-left: 50px;
+
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    padding: 10px 40px;
+    background-color: #6200EA;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+.sing-up_btn2:hover {
+    background-color: #40009a;
+    transform: translate(0px, -5px);
+}
+
+.sing-up_btn1:hover {
+    background-color: #454545;
+    transform: translate(0px, -5px);
+}
+
+.month_card-txt {
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    color: gray;
+    border: none;
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 30px;
+    background-color: gray;
+}
+
+
+.mnhr {
+    color: #6200EA;
+    border: none;
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 30px;
+    background-color: #6200EA;
+}
+
+
+
+
+.month-cards {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.month_card-txts {
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+    height: 290px;
+}
+
+span {
+    justify-content: center;
+    display: flex;
+    align-items: end;
+}
+
+.month-card {
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+
+
+
+
+    background-color: #1A1A1A;
+}
+
+
+.card_border1 {
+    background: #000000;
+    padding: 3px;
+    border-radius: 20px;
+
+    background: linear-gradient(180deg, #1A1A1A 0%, #595959 0%, #1A1A1A 100%);
+}
+
+.card_border2 {
+    background: #000000;
+    padding: 3px;
+    border-radius: 20px;
+
+
+
+    background: linear-gradient(180deg, #1A1A1A 0%, #6200EA 0%, #1A1A1A 100%);
+}
+
+
+
+.monthly-money1 {
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    text-align: center;
+    vertical-align: middle;
+    color: #595959;
+}
+
+.monthly-money2 {
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    text-align: center;
+    vertical-align: middle;
+    color: #6200EA;
+}
+
+.monthly_money-txt {
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #595959;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px black;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.header__brand img {
+    width: 300px;
+
+}
+
+.brand__logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.brand__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6200EA;
+    display: inline-block;
+}
+
+.dot-1 {
+    transform: scale(1.5);
+    opacity: 0.9;
+}
+
+.dot-2 {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.brand__text {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.header__actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.header__actions .btn {
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    padding: 10px 26px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    min-width: 110px;
+}
+
+.btn.login {
+    background: transparent;
+    color: #fff;
+}
+
+.btn.signup {
+    background: #6200EA;
+    color: #fff;
+    border-color: transparent;
+}
+
+.btn.login:hover,
+.btn.signup:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.sponsored {
+    margin: 50px 0;
+    padding: 40px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spt {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+.item {
+    min-width: 220px;
+    flex-shrink: 0;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info h3 {
+    margin: 10px 0 5px;
+    font-size: 23px;
+}
+
+.info p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.hero {
+    margin-bottom: 100px;
+    z-index: -1;
+    box-shadow: 0px 0px 11100px 190px black;
+    position: relative;
+    background-image: url('src/alexander-andrews-fsH1KjbdjE8-unsplash\ 1\ \(2\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    min-height: 90vh;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.037) 0%, rgba(0, 0, 0, 0.311) 100%);
+    z-index: 1;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 2;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.hero__title {
+    color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    line-height: 1.1;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.hero__txt {
+    color: #e8e8e8;
+    font-size: 22px;
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.45;
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid white;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
+
+.cos__img {
+    overflow: hidden;
+    border: 2px solid #dfdfdf00;
+    border-radius: 10px;
+}
+
+.cos__img:hover {
+    border: 2px solid #6200EA;
+}
+
+
+.cos__img img:hover {
+    transform: scale(1.3);
+}
+
+.btn1 {
+    background-color: #6200EA;
+    border: none;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+}
+
+.hero__txt {
+    text-align: center;
+    color: #dfdfdf;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cosmic__title {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.cosmic__rasm {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.cosmic__txt {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: white;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+}
+
+.cosmic__txt2 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+.cosmic__picture,
+.cosmic__picture1,
+.cosmic__picture2 {
+    width: 400px;
+    height: 256px;
+    padding: 2px;
+    border-radius: 10px;
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 80%);
+
+}
+
+
+
+
+.series {
+    padding: 20px;
+
+}
+
+
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    color: white;
+}
+
+
+
+.footer__left {
+    display: flex;
+
+
+    margin-left: 30px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.img__footer {
+    margin-bottom: 40px;
+    display: flex;
+    margin-left: 500px;
+    padding-top: 25px;
+
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: #8C8C8C;
+
+}
+
+.footer__wrapper2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #8C8C8C;
+}
+
+.footer__wrapper3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #8C8C8C;
+}
+
+
+
+.input__footer {
+    background-color: transparent;
+    width: 75%;
+    margin-left: 75px;
+    border: 1px solid #8C8C8C;
+    color: gray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.icon__footer {
+    
+    color: gray;
+    font-size: 30px;
+    display: flex;
+    gap: 45px;
+}
+
+.fa-facebook-f:hover {
+    transition: 0.5s;
+    color: blue;
+}
+
+.fa-instagram:hover {
+    transition: 0.5s;
+    color: rgb(255, 0, 255);
+}
+
+.fa-twitter:hover {
+    transition: 0.5s;
+    color: rgb(61, 150, 252);
+}
+
+.fa-youtube:hover {
+    transition: 0.5s;
+    color: rgb(255, 0, 0);
+}
+
+.footer-mid {
+    justify-content: space-between;
+    display: flex;
+    margin: 0 70px;
+
+}
+
+.icon__footer {
+    padding-top: 20px;
+}
+
+.text__footer {
+    color: gray;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE FIX ================= */
+
+/* container moslashsin */
+.container {
+    width: 100%;
+    max-width: 1380px;
+}
+
+/* images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* cosmic cards wrap */
+.cosmic__rasm {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cosmic__img1,
+.cosmic__img2,
+.cosmic__img3 {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* devices image fix */
+.devices-image img {
+    width: 100%;
+    max-width: 1000px;
+    margin-right: 0;
+}
+
+/* monthly cards responsive */
+.month-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card_border1,
+.card_border2 {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* sponsored items */
+.items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* footer fix */
+.footer-mid {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.img__footer {
+    margin: 0 auto 40px;
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+.device-category li{
+    font-size: 16px;
+}
+   
+.device-category h3{
+    font-size: 16px;
+}
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .hero__txt {
+        font-size: 18px;
+    }
+
+    .devices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__brand img {
+        width: 200px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+
+    .device-category li{
+    font-size: 14px;
+}
+   
+.device-category h3{
+    font-size: 14px;
+}
+
+    .header__wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 60vh;
+        padding-top: 120px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+    }
+
+    .hero__txt {
+        font-size: 16px;
+    }
+
+    .month-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .month-btn1,
+    .month-btn2,
+    .month-btn3 {
+        width: 100%;
+    }
+
+    .devices-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cosmic__picture,
+    .cosmic__picture1,
+    .cosmic__picture2 {
+        width: 100%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+
+.device-category li{
+    font-size: 12px;
+}
+   
+.device-category h3{
+    font-size: 12px;
+}
+
+    .hero__title {
+        font-size: 22px;
+    }
+
+    .hero__txt {
+        font-size: 14px;
+    }
+
+    .month-title {
+        font-size: 24px;
+    }
+
+    .month-txt {
+        font-size: 16px;
+    }
+
+    .series__title {
+        font-size: 28px;
+    }
+
+    .footer-mid li{
+        text-align: center;
+    }
+}
