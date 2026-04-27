@@ -1660,9 +1660,14 @@ video {
 
 .item {
     width: 100%;
-    max-width: 280px;
+    max-width: 290px;
 }
 
+
+.items img{
+    width: 100%;
+    height: 385px;
+}
 /* ================= AWARD SCROLL ================= */
 .award__imgs {
     width: 100%;
@@ -1702,7 +1707,7 @@ video {
 .footer-mid {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 150px;
 }
 
 .img__footer {
@@ -1710,9 +1715,6 @@ video {
 }
 
 /* ================= MODAL ================= */
-.signin-card {
-    width: 90%;
-}
 
 /* ================= MEDIA QUERIES ================= */
 
@@ -1819,6 +1821,7 @@ video {
     }
 
     .signin-card {
+        width: 100%;
         padding: 20px;
     }
 

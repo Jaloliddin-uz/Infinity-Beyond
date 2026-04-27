@@ -1128,7 +1128,7 @@ img {
 /* footer fix */
 .footer-mid {
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 150px;
     justify-content: center;
 }
 
