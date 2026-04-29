@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="wrapper">
                     <h1 class="hero__title">How One Supernova Measured The Universe</h1>
-                    <p class="hero__txt">In 2015 astronomers successfully predicted the appearance of a supernova 
+                    <p class="hero__txt">In 2015 astronomers successfully predicted the appearance of a supernova
                         within a couple weeks. How did they do it? </p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                         <p class="cosmic__txt2">This landscape of “mountains” and “valleys” speckledwith glittering
                             stars
                             is
-                            actually the edge of a nearby, young, star-forming region called NGC  3324 in the
+                            actually the edge of a nearby, young, star-forming region called NGC 3324 in the
                             Carina
                             Nebula.</p>
                     </div>
@@ -89,7 +89,7 @@
                             time,
                             physicists are on the cusp of the greatest scientific discovery of all time -- or
                             perhaps
-                            
+
                             their
                             greatestfailure.
                         </p>
@@ -105,7 +105,7 @@
                         <p class="cosmic__txt2">After a year of living on “Mars” the lines between reality and
                             simulation
                             blur.
-                            Following a crew of 6 led  by a female physicist, RED HEAVEN takes viewers inside a
+                            Following a crew of 6 led by a female physicist, RED HEAVEN takes viewers inside a
                             year-long
                             NASA psychological experiment</p>
                     </div>
@@ -114,6 +114,77 @@
             </div>
         </section>
 
+        <div class="container">
+
+
+            <section class="pricing-container">
+                <h2>Choose your plan</h2>
+                <p>Discover our plans and choose the best option for you to enjoy our content.</p>
+
+                <div class="toggle-container">
+                    <button class="btn" id="btn-monthly" onclick="updatePlan('monthly')">MONTHLY</button>
+                    <button class="btn active" id="btn-6months" onclick="updatePlan('6months')">6 MONTHS</button>
+                    <button class="btn" id="btn-yearly" onclick="updatePlan('yearly')">YEARLY</button>
+                </div>
+
+                <div class="plans-wrapper">
+                    <div class="card" id="card-monthly" onclick="updatePlan('monthly')">
+                        <h3>MONTHLY</h3>
+                        <p>At Infinity & Beyond you will find the best content about space.</p>
+                        <ul>
+                            <li>• Enjoy on all your devices</li>
+                            <li>• Watch on two screens</li>
+                            <li>• Watch anywhere you want</li>
+                            <li>• Resolution adapted to your device</li>
+                        </ul>
+                        <div class="price one">$19,90<span>/month</span></div>
+                        <a href="./sign-in.html">
+                            <button class="signup-btn">SIGN UP NOW!</button>
+
+                        </a>
+                    </div>
+
+                    <div class="card featured" id="card-6months" onclick="updatePlan('6months')">
+                        <span class="recommended">⭐️ Recommended</span>
+                        <h3>6 MONTHS</h3>
+                        <p>At Infinity & Beyond you will find the best content about space.</p>
+                        <ul>
+                            <li>• Enjoy on all your devices</li>
+                            <li>• Watch on multiple screens</li>
+                            <li>• Watch wherever you want</li>
+                            <li>• Resolution adapted to your device</li>
+                            <li>• High resolution and 4k quality</li>
+                            <li>• Create as many profiles as you want</li>
+                            <li>• Download and watch offline</li>
+                        </ul>
+                        <div class="price">$18,90<span>/month</span></div>
+                        <a href="./sign-in.html">
+                            <button class="signup-btn">SIGN UP NOW!</button>
+
+                        </a>
+                    </div>
+
+                    <div class="card" id="card-yearly" onclick="updatePlan('yearly')">
+                        <h3>YEARLY</h3>
+                        <p>At Infinity & Beyond you will find the best content about space.</p>
+                        <ul>
+                            <li>• Enjoy on all your devices</li>
+                            <li>• Watch on multiple screens</li>
+                            <li>• Watch wherever you want</li>
+                            <li>• High resolution and 4k quality</li>
+                            <li>• Download and watch offline</li>
+                        </ul>
+                        <div class="price two">$17,90<span>/month</span></div>
+                        <a href="./sign-in.html">
+                            <button class="signup-btn">SIGN UP NOW!</button>
+
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 
         <section data-aos="fade-up" data-aos-duration="1500" class="monthly">
             <div class="container">
                 <div class="month-top">
@@ -237,7 +308,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section data-aos="fade-up" data-aos-duration="1500" class="sponsored">
             <div class="container">
@@ -394,6 +465,7 @@
         </div>
     </footer>
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -401,6 +473,8 @@
 
 
     </script>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

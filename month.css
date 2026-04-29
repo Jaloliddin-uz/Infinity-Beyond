@@ -1005,7 +1005,7 @@ ul {
 }
 
 .icon__footer {
-    
+
     color: gray;
     font-size: 30px;
     display: flex;
@@ -1141,13 +1141,14 @@ img {
 /* Tablet */
 @media (max-width: 992px) {
 
-.device-category li{
-    font-size: 16px;
-}
-   
-.device-category h3{
-    font-size: 16px;
-}
+    .device-category li {
+        font-size: 16px;
+    }
+
+    .device-category h3 {
+        font-size: 16px;
+    }
+
     .hero__title {
         font-size: 36px;
     }
@@ -1169,13 +1170,13 @@ img {
 @media (max-width: 768px) {
 
 
-    .device-category li{
-    font-size: 14px;
-}
-   
-.device-category h3{
-    font-size: 14px;
-}
+    .device-category li {
+        font-size: 14px;
+    }
+
+    .device-category h3 {
+        font-size: 14px;
+    }
 
     .header__wrapper {
         flex-direction: column;
@@ -1221,13 +1222,13 @@ img {
 @media (max-width: 480px) {
 
 
-.device-category li{
-    font-size: 12px;
-}
-   
-.device-category h3{
-    font-size: 12px;
-}
+    .device-category li {
+        font-size: 12px;
+    }
+
+    .device-category h3 {
+        font-size: 12px;
+    }
 
     .hero__title {
         font-size: 22px;
@@ -1249,7 +1250,245 @@ img {
         font-size: 28px;
     }
 
-    .footer-mid li{
+    .footer-mid li {
         text-align: center;
+    }
+}
+
+
+
+
+
+.pricing-container {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.pricing-container p {
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.toggle-container {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn.active {
+    background: #6200ea;
+    color: white;
+    box-shadow: 0 0 15px rgba(98, 0, 234, 0.5);
+}
+
+.plans-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.card {
+    background: #141414;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px 25px;
+    width: 320px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    opacity: 0.7;
+}
+
+.card.featured {
+    border: 2px solid #6200ea;
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(98, 0, 234, 0.25);
+    z-index: 2;
+}
+
+.recommended {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #a366ff;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.card ul li {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+.one{
+    margin-top: 120px;
+}
+    
+.two{
+    margin-top: 90px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.card.featured .price {
+    color: #6200ea;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.signup-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card.featured .signup-btn {
+    background: #6200ea;
+    box-shadow: 0 4px 15px rgba(98, 0, 234, 0.4);
+}
+
+.signup-btn:hover {
+    filter: brightness(1.2);
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(98, 0, 234, 0.4);
+    transform: translateY(-5px);
+}
+
+.card.featured:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+
+/* DEFAULT (desktop) seniki qoladi */
+
+/* TABLET (768px gacha) */
+@media (max-width: 768px) {
+    .plans-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .toggle-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+/* TELEFON (480px gacha) */
+@media (max-width: 480px) {
+    .plans-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .pricing-container h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .pricing-container p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .toggle-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .toggle-container .btn {
+        width: 100%;
+    }
+}
+
+/* SMALL PHONE (360px gacha) */
+@media (max-width: 360px) {
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .signup-btn {
+        font-size: 14px;
+        padding: 10px;
     }
 }
