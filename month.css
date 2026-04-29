@@ -1422,40 +1422,74 @@ img {
 }
 
 
-/* DEFAULT (desktop) seniki qoladi */
+/* ===== BASE ===== */
+.plans-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 
-/* TABLET (768px gacha) */
-@media (max-width: 768px) {
-    .plans-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
+/* ===== LARGE DESKTOP (1400px+) ===== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
     }
 
+    .card {
+        width: 30%;
+    }
+}
+
+/* ===== LAPTOP (1200px - 1399px) ===== */
+@media (max-width: 1399px) {
+    .card {
+        width: 32%;
+    }
+}
+
+/* ===== SMALL LAPTOP (1024px - 1199px) ===== */
+@media (max-width: 1199px) {
     .card {
         width: 45%;
     }
 
+    .plans-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== BIG TABLET (iPad Pro ~1024px) ===== */
+@media (max-width: 1024px) {
+    .pricing-container h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+/* ===== TABLET (768px) ===== */
+@media (max-width: 768px) {
+    .plans-wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+
     .toggle-container {
-        display: flex;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
     }
 }
 
-/* TELEFON (480px gacha) */
-@media (max-width: 480px) {
-    .plans-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
+/* ===== LARGE PHONE (600px) ===== */
+@media (max-width: 600px) {
     .pricing-container h2 {
         font-size: 22px;
         text-align: center;
@@ -1466,6 +1500,13 @@ img {
         text-align: center;
     }
 
+    .card {
+        width: 95%;
+    }
+}
+
+/* ===== PHONE (480px) ===== */
+@media (max-width: 480px) {
     .toggle-container {
         flex-direction: column;
         width: 100%;
@@ -1473,22 +1514,34 @@ img {
 
     .toggle-container .btn {
         width: 100%;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 20px;
     }
 }
 
-/* SMALL PHONE (360px gacha) */
+/* ===== SMALL PHONE (390px - iPhone) ===== */
+@media (max-width: 390px) {
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+}
+
+/* ===== EXTRA SMALL (360px) ===== */
 @media (max-width: 360px) {
     .card {
         width: 100%;
         padding: 15px;
     }
 
-    .price {
-        font-size: 20px;
-    }
-
     .signup-btn {
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px;
     }
 }
