@@ -455,34 +455,81 @@ hr {
     }
 }
 
-/* 📱 Telefon */
-@media (max-width: 600px) {
+/* ================= RESPONSIVE (PREMIUM) ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
     .header {
+        padding: 15px 30px;
+    }
+
+    .header__logo {
+        width: 200px;
+    }
+
+    .movie {
+        padding: 100px 20px 30px;
+    }
+
+    .vido-container {
+        height: 60vh;
+    }
+
+    .right .title {
+        font-size: 36px;
+    }
+
+    .right p {
+        font-size: 15px;
+    }
+
+    .signin-card {
+        width: 90%;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
         padding: 10px 15px;
     }
 
     .header__items {
+        width: 100%;
+        justify-content: space-between;
         gap: 15px;
     }
 
+    .header__profile {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     .header__logo {
-        width: 140px;
+        width: 150px;
     }
 
-    .header__welcome {
-        display: none;
-    }
-
-    .movie-page {
-        padding: 80px 10px 20px 10px;
+    .movie {
+        padding: 90px 15px 20px;
+        gap: 20px;
     }
 
     .vido-container {
         height: 45vh;
     }
 
+    .right {
+        gap: 15px;
+    }
+
     .right .title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .right p {
@@ -491,32 +538,25 @@ hr {
 
     .signin-card {
         width: 95%;
+        padding: 25px 20px;
     }
+
+    .header__link {
+        margin-bottom: 10px;
+    }
+
 }
 
-/* 📱📱 Kichkina telefon */
-@media (max-width: 400px) {
-    .header {
-        padding: 8px 10px;
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .header__welcome {
+        font-size: 11px;
     }
 
-    .header__logo {
-        width: 110px;
-    }
-
-    .header__profile {
-        padding: 5px 10px;
-        gap: 5px;
-    }
-
-    .header__avatar {
-        width: 25px;
-        height: 25px;
-    }
-
-    .header__gear {
-        width: 25px;
-        height: 25px;
+    .header__welcome span {
+        font-size: 12px;
     }
 
     .vido-container {
@@ -524,19 +564,26 @@ hr {
     }
 
     .right .title {
-        font-size: 18px;
+        font-size: 20px;
     }
+
+    .header__link {
+        margin-bottom: 10px;
+    }
+
 
     .right p {
         font-size: 13px;
     }
 
-    .image img {
-        width: 70px;
-        height: 70px;
+    .signin-card {
+        width: 100%;
+        padding: 20px;
     }
 
-    .signin-card {
-        padding: 20px 10px;
+    .image img {
+        width: 80px;
+        height: 80px;
     }
+
 }

@@ -511,6 +511,11 @@ hr {
         padding: 25px 20px;
     }
 
+
+    .header__link{
+        margin-bottom: 10px;
+    }
+
 }
 
 
@@ -523,6 +528,10 @@ hr {
 
     .header__welcome span {
         font-size: 12px;
+    }
+
+    .header__link {
+        margin-bottom: 10px;
     }
 
     .vido-container {
@@ -538,7 +547,7 @@ hr {
     }
 
     .signin-card {
-        width: 95%;
+        width: 100%;
         padding: 20px;
     }
 
