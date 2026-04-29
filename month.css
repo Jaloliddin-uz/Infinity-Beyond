@@ -1353,11 +1353,8 @@ img {
 }
 
 .recommended {
-    position: absolute;
-    top: -38gpx;
-    left: 50%;
-    transform: translateX(-50%);
     background: transparent;
+    margin-bottom: 10px;
     color: #a366ff;
     font-size: 14px;
     white-space: nowrap;
